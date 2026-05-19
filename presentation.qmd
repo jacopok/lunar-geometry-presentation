@@ -1,19 +1,61 @@
 ---
-title: "Presentation"
+title: "The geometry of lunar gravitational wave detection"
 
 format: revealjs
+fig-cap-location=: margin
 ---
 
-## First slide
+## The 
 
+[ET docs link to the paper.](https://apps.et-gw.eu/tds/?r=20361)
 
-::: {.incremental}
-- Incremental 
-- list!
+## Shifting timing
+
+From merger time samples at a location $r_0$, written as $t_{i}^{\text{mrg}, r_0}$,
+we obtain samples of time measured at a frequency $f$ and location $r$ by:
+
+$$
+t_{i}^{f, r} = t_{i}^{\text{mrg}, r_0} 
+- \frac{(r-r_0 ) \cdot \hat{n}_{i}}{c}
++ \frac{1}{2 \pi} \frac{ \text{d} \varphi_{22}(f; \theta_i)}{ \text{d} f}
+$$
+
+## Minimum motion in 3D
+
+{{< video https://www.youtube.com/watch?v=xEfrbniqlek width="100%" height="100%" >}}
+
+# Einstein Telescope injections
+
+## Multimodalities
+
+:::: {layout="[ 40, 60 ]"}
+
+::: {#first-column}
+Sky localization modes for high mass 
+
+($150 M_{\odot} \lesssim \mathcal{M} \leq 1100 M_{\odot}$)
+
+and distant ($D_L \gtrsim 6 \text{Gpc}$) BBH.
+
+::::: {style="font-size: 70%;"}
+
+[@santoliquidoComparingNextgenerationDetector2025]
+:::::
+
 :::
 
-::: {.fragment}
-And another fragment
+::: {#second-column}
+![](figures/number_of_modes_90perc_v3.webp){width=60% }
 :::
 
-## Second slide
+::::
+
+## Octimodal sky distribution
+
+![](figures/5_skymap_252_geocent_ET-1.png) 
+
+## Arrival times at the vertices
+
+![](figures/arrival_times_Delta.png) 
+
+## References
