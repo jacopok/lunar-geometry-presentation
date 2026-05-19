@@ -1,0 +1,13 @@
+
+# Project
+
+This is some example text.
+
+
+```{python}
+from IPython.display import Markdown
+
+x = 1
+
+Markdown(f'This is some Markdown rendered text with a variable ${x=}$.')
+```
