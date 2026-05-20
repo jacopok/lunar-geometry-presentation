@@ -1,4 +1,4 @@
-Presentation for the Division 10 Einstein Telescope call.
+Presentation for the Division 10 Einstein Telescope call on the 20th of May, 2026.
 
 The presentation can be viewed [here](https://jacopok.github.io/lunar-geometry-presentation/presentation.html).
 
