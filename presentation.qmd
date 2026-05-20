@@ -79,7 +79,7 @@ $$
 
 ## Minimum motion in 3D
 
-{{< video https://www.youtube.com/watch?v=xEfrbniqlek width="100%" height="100%" >}}
+{{< video https://www.youtube.com/watch?v=xEfrbniqlek width="90%" height="90%" >}}
 
 ## Effect on sampling time
 
@@ -182,11 +182,11 @@ and distant ($D_L \gtrsim 6 \text{Gpc}$) BBH.
 
 ![[@santoliquidoFastAccurateParameter2025].](figures/5_skymap_252_geocent_ET-1.png){width=80%} 
 
-## GW250114 arrival times at the vertices 
+## GW250114: arrival times at the vertices 
 
 ![](figures/arrival_times_Delta.png) 
 
-## GW250114 multimodality
+## GW250114: multimodality
 
 - SNR: 682 for ET-$\Delta$, 835 for ET-2L, 35 for LGWA;
 - 6 sky modes excluded by the arrival time discrepancy;
