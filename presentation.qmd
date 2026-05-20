@@ -5,11 +5,62 @@ format: revealjs
 fig-cap-location=: margin
 ---
 
-## The 
+# Lunar Gravitational Wave Antenna 
 
-[ET docs link to the paper.](https://apps.et-gw.eu/tds/?r=20361)
+## Temperatures at the lunar north pole
 
-## Shifting timing
+![](figures/quickmap-lroc-2.png)
+
+## Detector configuration
+
+:::: {layout="[ 40, 60 ]"}
+
+::: {#first-column}
+
+Measuring seismic motion at 4 locations inside a lunar crater.
+
+::::: {style="font-size: 70%;"}
+
+[@vanheijningenPayloadLunarGravitationalwave2023]
+:::::
+
+:::
+
+
+::: {#second-column}
+
+![](figures/LGWApayload.png){width=70%}
+:::
+::::
+
+## GW250114 with the LGWA
+
+![](figures/lgwa_ppd_fb.png){width=75%}
+
+## What to use as a timing reference
+
+
+:::: {layout="[ 40, 60 ]"}
+
+::: {#first-column}
+
+The merger time is out of band!
+
+Instead, we can use $t_{22}(f)$; the optimum is for $f\approx 0.56$ Hz.
+
+:::
+
+
+::: {#second-column}
+
+![](figures/illustration_timing_parameterization.png){width=80%}
+![](figures/timing_constraint_by_frequency_GW250114.png){width=80%}
+
+:::
+::::
+
+
+## Where to measure time
 
 From merger time samples at a location $r_0$, written as $t_{i}^{\text{mrg}, r_0}$,
 we obtain samples of time measured at a frequency $f$ and location $r$ by:
@@ -20,13 +71,74 @@ t_{i}^{f, r} = t_{i}^{\text{mrg}, r_0}
 + \frac{1}{2 \pi} \frac{ \text{d} \varphi_{22}(f; \theta_i)}{ \text{d} f}
 $$
 
+At any given frequency $f$ we can compute 
+
+$$r_{\text{min}}(f) = \text{argmin}_r \text{var}(t_i^{f, r})
+$$
+
 ## Minimum motion in 3D
 
 {{< video https://www.youtube.com/watch?v=xEfrbniqlek width="100%" height="100%" >}}
 
-# Einstein Telescope injections
+# Einstein Telescope comparison
 
-## Multimodalities
+---
+
+:::: {layout="[ 40, 60 ]"}
+
+::: {#first-column}
+
+Intrinsic parameters:
+
+- extremely precise on $\mathcal{M}$;
+- complementary with ET;
+- more precise than LVK on effective spin.
+
+::::: {style="font-size: 70%;"}
+
+[@tissinoGeometryLunarGravitational2026]
+:::::
+
+:::
+
+
+::: {#second-column}
+
+![](figures/mchirp_q_lgwa_vs_et.png){width=80%}
+:::
+
+::::
+
+---
+
+:::: {layout="[ 40, 60 ]"}
+
+::: {#first-column}
+
+Extrinsic parameters:
+
+- LGWA localization tighter and "rounder" than LVK;
+- inclination not well constrained by LGWA;
+- ET-2L: tight, near Gaussian.
+- ET-$\Delta$: tight, bimodal.
+
+::::: {style="font-size: 70%;"}
+
+[@tissinoGeometryLunarGravitational2026]
+:::::
+
+:::
+
+
+::: {#second-column}
+
+![](figures/ra_dec_theta_jn_lgwa_vs_et.png){width=80%}
+:::
+
+::::
+
+
+## Massive BBH: multimodalities
 
 :::: {layout="[ 40, 60 ]"}
 
@@ -39,7 +151,7 @@ and distant ($D_L \gtrsim 6 \text{Gpc}$) BBH.
 
 ::::: {style="font-size: 70%;"}
 
-[@santoliquidoComparingNextgenerationDetector2025]
+[@santoliquidoComparingNextgenerationDetector2026]
 :::::
 
 :::
@@ -50,12 +162,22 @@ and distant ($D_L \gtrsim 6 \text{Gpc}$) BBH.
 
 ::::
 
-## Octimodal sky distribution
+## Massive BBH: sky posterior
 
-![](figures/5_skymap_252_geocent_ET-1.png) 
+![[@santoliquidoFastAccurateParameter2025].](figures/5_skymap_252_geocent_ET-1.png){width=80%} 
 
 ## Arrival times at the vertices
 
 ![](figures/arrival_times_Delta.png) 
+
+## GW250114 multimodality
+
+- SNR: 682 for ET-$\Delta$, 835 for ET-2L, 35 for LGWA;
+- 6 sky modes excluded by the arrival time discrepancy;
+- ~5% of the posterior mass in a mode with 
+    - $\beta = - \beta_{\text{inj}}$, 
+    - $\theta_{JN} = \pi - \theta_{JN}^{\text{inj}}$,
+    - $\psi = \pi - \psi^{\text{inj}}$.
+    - $t_{\text{geo}} = t_{\text{geo}}^{\text{inj}} - 2 \vec{r}_{\text{ET}} \cdot \hat{k}_{\text{inj}} / c$.
 
 ## References
