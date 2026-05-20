@@ -7,7 +7,7 @@ fig-cap-location=: margin
 
 # Lunar Gravitational Wave Antenna 
 
-## Temperatures at the lunar north pole
+## The lunar north pole
 
 ![](figures/quickmap-lroc-2.png)
 
@@ -17,7 +17,8 @@ fig-cap-location=: margin
 
 ::: {#first-column}
 
-Measuring seismic motion at 4 locations inside a lunar crater.
+Measuring seismic motion at 4 locations inside a lunar crater,
+with cryogenics and seismic noise cancellation.
 
 ::::: {style="font-size: 70%;"}
 
@@ -62,7 +63,7 @@ Instead, we can use $t_{22}(f)$; the optimum is for $f\approx 0.56$ Hz.
 
 ## Where to measure time
 
-From merger time samples at a location $r_0$, written as $t_{i}^{\text{mrg}, r_0}$,
+From merger time samples at a location $r_0$,
 we obtain samples of time measured at a frequency $f$ and location $r$ by:
 
 $$
@@ -79,6 +80,21 @@ $$
 ## Minimum motion in 3D
 
 {{< video https://www.youtube.com/watch?v=xEfrbniqlek width="100%" height="100%" >}}
+
+## Effect on sampling time
+
+::::: {style="font-size: 80%;"}
+
+|   Likelihood evaluations |   Sampling time [min] |   Timing uncertainty [s] |   Prior width [s] | Sampler   | Center   |
+|-------------------------:|----------------------:|-------------------------:|------------------:|:----------|:---------|
+|                    91515 |                   3   |                    0.075 |               0.5 | `nessai`  | optimal  |
+|                   107878 |                   3.6 |                    0.075 |              27   | `nessai`  | optimal  |
+|                   659816 |                  16.7 |                    4.733 |              27   | `nessai`  | SSB      |
+|                   806067 |                  16.8 |                    0.074 |               0.5 | `dynesty` | optimal  |
+|                  1530906 |                  33   |                    0.076 |              27   | `dynesty` | optimal  |
+|                  9144813 |                 198.6 |                    4.766 |              27   | `dynesty` | SSB      |
+
+:::::
 
 # Einstein Telescope comparison
 
@@ -166,7 +182,7 @@ and distant ($D_L \gtrsim 6 \text{Gpc}$) BBH.
 
 ![[@santoliquidoFastAccurateParameter2025].](figures/5_skymap_252_geocent_ET-1.png){width=80%} 
 
-## Arrival times at the vertices
+## GW250114 arrival times at the vertices 
 
 ![](figures/arrival_times_Delta.png) 
 
